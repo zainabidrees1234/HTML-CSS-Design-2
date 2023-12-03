@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card component</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 100%;
+        height: 603px;
+        background: 
+        url(bg-pattern-top.svg) left top no-repeat,
+        url(bg-pattern-bottom.svg) right bottom no-repeat;
+        background-color: rgb(25, 136, 140);
+        background-position: -170% 130%, 240% -70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{ 
+
+        width: 300px;
+        background-color: white;
+        height: 320px;
+
+        border-radius: 15px;
+    }
+    .i1{
+        width: 300px;
+        height: 120px;
+        border-radius: 10px 10px 0 0 ;
+    }
+    .box2{
+        background-color: white;
+         width: 80px;
+         height: 80px;  
+         border-radius: 40px; 
+         position: relative;
+         bottom: 40px;
+         left: 110px;
+         margin-bottom: 0;
+    }
+    .i2{
+        width: 73px;
+         height: 70px;  
+         border-radius: 40px; 
+         position: relative;
+         top: 5px;
+         left: 3px;
+    }
+    h2{
+        position: relative;
+        bottom: 25px;
+        left: 87px;
+        font-weight: bold;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 18px;
+    }
+    .p1{
+        position: relative;
+        bottom: 46px;
+        left: 198px;
+        font-size: 18px;
+        color: grey;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    p{
+        position: relative;
+        bottom: 35px;
+        left: 130px;
+        font-size: 11px;
+        color: grey;
+        font-family: sans-serif;
+        margin-bottom: 0;
+    }
+    hr{
+        position: relative;
+        bottom: 8px;
+    }
+    .d2{
+        display: flex;
+        gap: 30px;
+        position: relative;
+        left: 65px;
+        top: 5px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 15px;
+    }
+    .d3{
+        display: flex;
+        gap: 32px;
+        position: relative;
+        left: 57px;
+        top: 7px;
+        font-family: monospace;
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+    .l1{
+        position: relative;
+        right: 5px;
+    }
+    .l2{
+        position: relative;
+        left: 5px;
+    }
+</style>
+<body>
+    <div class="container">
+    <div class="box">
+        <img class="i1" src="bg-pattern-card.svg" alt="">
+        <div class="box2">
+            <img class="i2" src="image-victor.jpg" alt="">
+        </div>
+        <div class="d1">
+            <h2>Victor Crest</h2>
+            <p class="p1">26</p>
+            <p>London</p>
+            <hr>
+        </div>
+        <div class="d2">
+            <h3>80K</h3>
+            <h3>803K</h3>
+            <h3>1.4K</h3>
+        </div>
+        <div class="d3">
+            <h3>Followers</h3>
+            <h3 class="l1">Likes</h3>
+            <h3 class="l2">Photos</h3>
+        </div>
+    
+
+    </div>
+    </div>
+    
+</body>
+</html>
